@@ -4,6 +4,7 @@
 {% block content %}
 
 
+
     <!--  Start header  -->
     <header class="tc-header-style4">
         <div class="container">
@@ -11,43 +12,27 @@
                 <div class="col-lg-9">
                     <div class="header-slider">
                         <div class="swiper-wrapper">
+                            {% for slider in sliders %}
                             <div class="swiper-slide">
                                 <div class="slider-card">
                                     <div class="row align-items-end">
                                         <div class="col-lg-5">
                                             <div class="info">
-                                                <h3> Cybex Stroller with <br> Same Price  </h3>
-                                                <h2 class="price"> $259 </h2>
-                                                <div class="text"> Super offer from cybex <br> stroller and more. Promotion program <br> will end of <span class="color-cyan2"> July 15, 2023 </span> </div>
+                                                <h3> {{ slider.heading }}</h3>
+                                                <h2 class="price"> {{ slider.sub_heading}} </h2>
+                                                <div class="text"> {{ slider.desctiption | safe }} </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="img">
-                                                <img src="{% static 'img/head1.png' %}" alt="" class="img-contain">
+                                                <img src="{{ slider.image.url }}" alt="" class="img-contain">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="slider-card">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5">
-                                            <div class="info">
-                                                <h6 class="fsz-18 fw-bold mb-15"> Bobolax </h6>
-                                                <h3 class="fsz-35 fw-400"> <strong class="fw-700"> Nutri 7-In-1 </strong> Base On Formula 400g  </h3>
-                                                <div class="text mt-20"> Lorem ispum dolor sit <br> amet photo </div>
-                                                <a href="../inner_pages/single_product.html" class="butn bg-cyan2 text-white radius-3 fw-600 text-uppercase mt-30"> <span> Shop Now </span> </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="img">
-                                                <img src="{% static 'img/head2.png' %}" alt="" class="img-contain">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
+                           
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -58,10 +43,13 @@
     </header>
     <!--  Start header  -->
 
+    
 
     <!--Contents-->
     <main>
 
+
+       
         <!--  Start categories  -->
         <section class="tc-categories-style4 pt-60 pb-60">
             <div class="container">
@@ -69,7 +57,7 @@
                     <h4 class="fsz-30 fw-400"> <b class="color-cyan2"> Most popular categories </b> for baby products </h4>
                 </div>
                 <div class="categories-slider4 wow fadeInUp slow">
-                    <div class="swiper-wrapper">
+                  <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="index.html#" class="cat-card new-card">
                                 <div class="icon-circle">
@@ -152,6 +140,12 @@
                         </div>
                     </div>
                 </div>
+
+                
+       
+
+
+
                 <div class="cat-banner">
                     <div class="row gx-3">
                         <div class="col-lg-6">
@@ -183,6 +177,8 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
         </section>
         <!--  End categories  -->
@@ -272,6 +268,7 @@
                                                 <a href="index.html#0" class="butn bg-cyan2 text-white radius-2 fw-600 fsz-12 text-uppercase addCart"> <span> add to cart </span> </a>
                                             </div>
                                         </div>
+                                        
                                         <div class="swiper-slide">
                                             <div class="product-card">
                                                 <div class="top-info">
@@ -657,64 +654,6 @@
         <!--  End recommended  -->
 
 
-        <!--  Start milestones  -->
-        <section class="tc-milestones-style4">
-            <div class="container">
-                <div class="milestones-box">
-                    <div class="section-title-style4 text-center">
-                        <h4 class="fsz-30 fw-400"> Prepare for <b class="color-cyan2"> baby milestones </b> </h4>
-                    </div>
-                    <div class="row gx-4">
-                        <div class="col-lg-3">
-                            <div class="miles-card wow fadeInUp slow" data-wow-delay="0.2s">
-                                <div class="img">
-                                    <img src="{% static 'img/m1.png' %}" alt="" class="img-cover">
-                                </div>
-                                <div class="info">
-                                    <a href="../inner_pages/products.html" class="title fsz-20"> Sleep Training </a>
-                                    <small class="fsz-13 color-666"> 0-6 months </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="miles-card wow fadeInUp slow" data-wow-delay="0.4s">
-                                <div class="img">
-                                    <img src="{% static 'img/m2.png' %}" alt="" class="img-cover">
-                                </div>
-                                <div class="info">
-                                    <a href="../inner_pages/products.html" class="title fsz-20"> Starting Solids </a>
-                                    <small class="fsz-13 color-666"> 6-12 months </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="miles-card wow fadeInUp slow" data-wow-delay="0.6s">
-                                <div class="img">
-                                    <img src="{% static 'img/m3.png' %}" alt="" class="img-cover">
-                                </div>
-                                <div class="info">
-                                    <a href="../inner_pages/products.html" class="title fsz-20"> On The Move </a>
-                                    <small class="fsz-13 color-666"> 12-24 months </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="miles-card wow fadeInUp slow" data-wow-delay="0.8s">
-                                <div class="img">
-                                    <img src="{% static 'img/m4.png' %}" alt="" class="img-cover">
-                                </div>
-                                <div class="info">
-                                    <a href="../inner_pages/products.html" class="title fsz-20"> Potty Training </a>
-                                    <small class="fsz-13 color-666"> 2-4 years </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  End milestones  -->
-
 
         <!--  Start banner  -->
         <section class="tc-banner-style4 pt-60 wow fadeInUp slow" data-wow-delay="0.2s">
@@ -974,51 +913,15 @@
         <section class="tc-brands-style4">
             <div class="container">
                 <div class="section-title-style4 text-center mb-40">
-                    <h4 class="fsz-30 fw-400"> <b class="color-cyan2"> Most loved </b> brands on Swatbabymall </h4>
+                    <h4 class="fsz-30 fw-400"> <b class="color-cyan2"> Shop by</b> brands </h4>
                 </div>
                 <div class="brands">
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.2s">
-                        <img src="{% static 'img/brands/br1.png' %}" alt="">
+                    {% for brand in brands %}
+                    <a href="#" class="logo wow fadeInUp slow" data-wow-delay="0.2s">
+                        <img src="{{ brand.image.url }}" alt="">
                     </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.4s">
-                        <img src="{% static 'img/brands/br2.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.6s">
-                        <img src="{% static 'img/brands/br3.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.8s">
-                        <img src="{% static 'img/brands/br4.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="1s">
-                        <img src="{% static 'img/brands/br5.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="1.2s">
-                        <img src="{% static 'img/brands/br6.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="1.4s">
-                        <img src="{% static 'img/brands/br7.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.3s">
-                        <img src="{% static 'img/brands/br8.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.5s">
-                        <img src="{% static 'img/brands/br9.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.7s">
-                        <img src="{% static 'img/brands/br10.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="0.9s">
-                        <img src="{% static 'img/brands/br11.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="1.1s">
-                        <img src="{% static 'img/brands/br12.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="1.3s">
-                        <img src="{% static 'img/brands/br13.png' %}" alt="">
-                    </a>
-                    <a href="index.html#" class="logo wow fadeInUp slow" data-wow-delay="1.5s">
-                        <img src="{% static 'img/brands/br14.png' %}" alt="">
-                    </a>
+                    {% endfor %}
+                    
                 </div>
             </div>
         </section>
@@ -2027,111 +1930,6 @@
         <!--  End about  -->
 
 
-        <!--  Start blog  -->
-        <section class="tc-blog-style4 pt-60 pb-60 wow fadeInUp slow" data-wow-delay="0.2s">
-            <div class="container">
-                <div class="section-title-style4 mb-40">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <h4 class="fsz-30 fw-400"> <b class="color-cyan2"> What’s New </b> Today </h4>
-                        </div>
-                        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-                            <a href="index.html#" class="more text-capitalize color-666 fsz-13 hover-cyan2"> see More articles <i class="la la-angle-right ms-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-content">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="overlay-card mb-4 mb-lg-0">
-                                <div class="img">
-                                    <img src="{% static 'img/blog1.jpg' %}" alt="" class="main-img img-cover">
-                                </div>
-                                <div class="info text-white">
-                                    <a href="index.html#" class="title fsz-18 fw-600 d-block lh-3 hover-underline"> Babies in Winter: How to protect your newborn in cold weather </a>
-                                    <small class="fsz-12 mt-15"> 45 Minutes ago in Experience </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="sub-blog">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="blog-card pt-0">
-                                            <div class="row gx-4">
-                                                <div class="col-5">
-                                                    <div class="img th-100 radius-4 overflow-hidden">
-                                                        <img src="{% static 'img/blog2.jpg' %}" alt="" class="img-cover">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <div class="info">
-                                                        <a href="index.html#" class="title"> Omicron in Kids: Here’s what parents should know </a>
-                                                        <small class="fsz-12 color-666 d-block w-100"> 45 Minutes ago in <span class="color-000"> Experience </span> </small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="blog-card pt-0">
-                                            <div class="row gx-4">
-                                                <div class="col-5">
-                                                    <div class="img th-100 radius-4 overflow-hidden">
-                                                        <img src="{% static 'img/blog3.jpg' %}" alt="" class="img-cover">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <div class="info">
-                                                        <a href="index.html#" class="title"> Insight into dadliness </a>
-                                                        <small class="fsz-12 color-666 d-block w-100"> 2 Days ago in <span class="color-000"> Infant </span> </small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="blog-card pb-0 border-0">
-                                            <div class="row gx-4">
-                                                <div class="col-5">
-                                                    <div class="img th-100 radius-4 overflow-hidden">
-                                                        <img src="{% static 'img/blog4.jpg' %}" alt="" class="img-cover">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <div class="info">
-                                                        <a href="index.html#" class="title"> Fun facts about January Babies </a>
-                                                        <small class="fsz-12 color-666 d-block w-100"> 1 Day ago in <span class="color-000"> Life Style </span> </small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="blog-card pb-0 border-0">
-                                            <div class="row gx-4">
-                                                <div class="col-5">
-                                                    <div class="img th-100 radius-4 overflow-hidden">
-                                                        <img src="{% static 'img/blog5.jpg' %}" alt="" class="img-cover">
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <div class="info">
-                                                        <a href="index.html#" class="title"> Your handy guide to revamp the nursery </a>
-                                                        <small class="fsz-12 color-666 d-block w-100"> 2 Days ago in <span class="color-000"> Pregnancy & Postpartum </span> </small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  End blog  -->
     </main>
     <!--End-Contents-->
 

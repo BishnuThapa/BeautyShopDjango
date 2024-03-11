@@ -34,12 +34,13 @@ RATING = (
 )
 
 
-class Banner(models.Model):
+class Slider(models.Model):
     image = models.ImageField(upload_to='slider',
                               help_text='1920*1280 px')
     heading = models.CharField(max_length=255, null=True, blank=True)
-    sub_heading = models.TextField(null=True, blank=True)
-    link = models.URLField()
+    sub_heading = models.CharField(max_length=255, null=True, blank=True)
+    desctiption = RichTextUploadingField(null=True, blank=True)
+    link = models.URLField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -100,6 +101,7 @@ class Brand(models.Model):
     image = models.ImageField(upload_to='category')
     icon = models.ImageField(upload_to='category')
     description = RichTextUploadingField(null=True, blank=True)
+    ordering = models.IntegerField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

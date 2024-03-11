@@ -1,0 +1,1596 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+ <!--Contents-->
+            <main>
+
+                <!--  Start breadcrumb  -->
+                <section class="tc-breadcrumb-style6 p-30 radius-4 bg-white mt-3 wow fadeInUp">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb fw-bold mb-0">
+                          <li class="breadcrumb-item color-999"><a href="{% url 'core:index' %}">Home</a></li>
+                          <li class="breadcrumb-item color-999"><a href="{% url 'core:shop' %}">Shop</a></li>
+                          {% comment %} <li class="breadcrumb-item active color-000" aria-current="page">Top Cell Phones & Tablets</li> {% endcomment %}
+                        </ol>
+                      </nav>
+                </section>
+                <!--  End breadcrumb  -->
+
+
+                <!--  Start header  -->
+                <section class="tc-header-style6 p-30 radius-4 bg-white mt-3 wow fadeInUp">
+                    <h6 class="fsz-18 fw-bold text-uppercase mb-30"> top cell phones & tablets </h6>
+                    <div class="row gx-2">
+                        <div class="col-lg-8">
+                            <div class="header-slider6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="img">
+                                                <img src="{% static 'img/header/slider1.png' %}" alt="" class="img-cover">
+                                            </div>
+                                            <div class="info text-white">
+                                                <h2 class="fsz-30 fw-500"> <span class="color-green2 d-block"> aPodOs </span> Work wonders <br> with easy </h2>
+                                                <p class="fsz-12 mt-2"> Experience aPod 2023 with new <br> technology from $769 </p>
+                                                <a href="single_product.html" class="butn px-3 py-2 bg-green2 text-white radius-4 mt-30 fw-500 fsz-12 text-uppercase"> <span> discover now </span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-card">
+                                            <div class="img">
+                                                <img src="{% static 'img/header/slider2.png' %}" alt="" class="img-cover">
+                                            </div>
+                                            <div class="info">
+                                                <p class="fsz-13 text-uppercase mb-3"> pc gaming <br> cases </p>
+                                                <h2 class="fsz-30 fw-400 text-uppercase"> SAle up to <br> <strong class="color-green2"> 50% </strong> <strong> off </strong> </h2>
+                                                <a href="single_product.html" class="butn px-3 py-2 bg-000 text-white radius-4 mt-50 fw-500 fsz-12 text-uppercase hover-bg-green2"> <span> buy now </span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-card text-white">
+                                            <div class="img">
+                                                <img src="{% static 'img/header/slider3.png' %}" alt="" class="img-cover">
+                                            </div>
+                                            <div class="info">
+                                                <h2 class="fsz-30"> Noise Cancelling <br> <span class="fw-300"> Headphone </span> </h2>
+                                                <ul class="fsz-12 text-capitalize mt-20">
+                                                    <li> <i class="la la-dot-circle me-2"></i> <span> Boso Over-Ear Headphone  </span> </li>
+                                                    <li> <i class="la la-dot-circle me-2"></i> <span> Wifi, Voice Assistant,  </span> </li>
+                                                    <li> <i class="la la-dot-circle me-2"></i> <span> Low latency game mde  </span> </li>
+                                                </ul>
+                                                <a href="single_product.html" class="butn px-3 py-2 bg-white color-000 radius-4 mt-40 fw-500 fsz-12 text-uppercase hover-bg-green2"> <span> buy now </span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-controls">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-3 mt-lg-0">
+                            <div class="sub-banner">
+                                <div class="img">
+                                    <img src="{% static 'img/banner1.png' %}" alt="" class="img-cover">
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h6 class="fsz-24"> redmi note 12 Pro+ 5g </h6>
+                                            <small class="fsz-12 color-666 mt-10"> Rise to the challenge </small>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <a href="single_product.html" class="butn px-3 py-2 bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase hover-bg-green2"> <span> Shop Now </span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  End header  -->
+
+
+                <!--  Start categories  -->
+                <section class="tc-categories-style6 p-30 radius-4 bg-white mt-3 wow fadeInUp">
+                    <h6 class="fsz-18 fw-bold text-uppercase mb-30"> popular categories </h6>
+                    <div class="content">
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> iPhone (iOS) </h6>
+                                <small class="fsz-12 color-666"> 74 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod20.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Android </h6>
+                                <small class="fsz-12 color-666"> 35 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod21.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> 5G Support </h6>
+                                <small class="fsz-12 color-666"> 12 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod22.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Apple Tablets </h6>
+                                <small class="fsz-12 color-666"> 22 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod62.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Smartphone <br> Chargers </h6>
+                                <small class="fsz-12 color-666"> 33 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod63.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Gaming </h6>
+                                <small class="fsz-12 color-666"> 9 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod23.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Xiaomi </h6>
+                                <small class="fsz-12 color-666"> 52 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod24.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Accessories </h6>
+                                <small class="fsz-12 color-666"> 29 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod25.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> Samsung Tablets </h6>
+                                <small class="fsz-12 color-666"> 26 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod27.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                        <a href="products.html" class="number-item">
+                            <div class="inf">
+                                <h6 class="fsz-14 fw-bold mb-0 sm-title"> eReader </h6>
+                                <small class="fsz-12 color-666"> 5 Items </small>
+                            </div>
+                            <div class="img">
+                                <img src="{% static 'img/products/prod64.png' %}" alt="" class="img-contain">
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <!--  End categories  -->
+
+
+                <!--  Start products  -->
+                <section class="tc-products-style6 p-30 radius-4 bg-white mt-3 wow fadeInUp">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="filters">
+                                <div class="category-box">
+                                    <h6 class="fsz-18 fw-bold text-uppercase mb-20"> categories </h6>
+                                    <a href="products.html#" class="cat-btn fsz-12 fw-bold py-2 px-3 bg-white radius-3 hover-bg-green2"> <i class="la la-angle-left me-2"></i> All Categories </a>
+                                    <div class="cat-list pt-20">
+                                        <h6 class="fsz-14 fw-bold mb-20"> Cell Phones & Tablets </h6>
+                                        <ul>
+                                            <li> <a href="products.html#"> All </a> </li>
+                                            <li> <a href="products.html#"> Iphone </a> </li>
+                                            <li> <a href="products.html#"> Samsung </a> </li>
+                                            <li> <a href="products.html#"> Xiaomi </a> </li>
+                                            <li> <a href="products.html#"> Asus </a> </li>
+                                            <li> <a href="products.html#"> Oppo </a> </li>
+                                            <li> <a href="products.html#"> Gaming Smartphone </a> </li>
+                                            <li> <a href="products.html#"> Ipad </a> </li>
+                                            <li> <a href="products.html#"> Window Tablets </a> </li>
+                                            <li> <a href="products.html#"> eReader </a> </li>
+                                            <li> <a href="products.html#"> Smartphone Chargers </a> </li>
+                                            <li> <a href="products.html#"> 5G Support Smartphone </a> </li>
+                                            <li> <a href="products.html#"> Smartphone Accessories </a> </li>
+                                            <li> <a href="products.html#"> Tablets Accessories </a> </li>
+                                            <li> <a href="products.html#"> Cell Phones <i class="la la-angle-left"></i> $200 </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="filter-box mt-10">
+                                    <div class="title mb-20">
+                                        <h6 class="fsz-18 fw-bold text-uppercase"> categories </h6>
+                                        <a href="products.html#" class="rest-btn hover-green2"> <i class="la la-sync me-1"></i> Reset All </a>
+                                    </div>
+                                    <div class="selected-filters">
+                                        <span class="selected-item"> Min: $45.00 <i class="la la-times ms-1"></i> </span>
+                                        <span class="selected-item"> 10.9 inch <i class="la la-times ms-1"></i> </span>
+                                        <span class="selected-item"> Color: Red <i class="la la-times ms-1"></i> </span>
+                                        <span class="selected-item"> 128GB <i class="la la-times ms-1"></i> </span>
+                                    </div>
+                                    <div class="filter-groups">
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Brands </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="search-group">
+                                                    <input type="text" placeholder="" class="form-control">
+                                                    <button class="search-btn"> <i class="la la-search"></i> </button>
+                                                </div>
+                                                <div class="scroll-cont">
+                                                    <div class="check-group check-brands">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand1">
+                                                            <label class="form-check-label" for="brand1">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand1.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (14) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand2">
+                                                            <label class="form-check-label" for="brand2">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand2.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (6) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand3">
+                                                            <label class="form-check-label" for="brand3">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand3.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (7) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand4">
+                                                            <label class="form-check-label" for="brand4">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand4.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (18) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand5">
+                                                            <label class="form-check-label" for="brand5">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand5.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (1) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand6">
+                                                            <label class="form-check-label" for="brand6">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand1.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (14) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand7">
+                                                            <label class="form-check-label" for="brand7">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand2.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (7) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand8">
+                                                            <label class="form-check-label" for="brand8">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand3.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (18) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand9">
+                                                            <label class="form-check-label" for="brand9">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand4.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (4) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="brand10">
+                                                            <label class="form-check-label" for="brand10">
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <img src="{% static 'img/brands/brand5.png' %}" alt="" class="brand-img">
+                                                                    <span class="color-888 ms-2"> (1) </span>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Price </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="price-card">
+                                                    <div class="slider">
+                                                        <div class="progress"></div>
+                                                    </div>
+                                                    <div class="range-input">
+                                                        <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                                                        <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+                                                    </div>
+                                                    <div class="row mt-20 align-items-center gx-0">
+                                                        <div class="col-9">
+                                                            <div class="price-input">
+                                                                <div class="field">
+                                                                    <span class="sympol">$</span>
+                                                                    <input type="number" class="input-min" value="0">
+                                                                </div>
+                                                                <div class="separator"></div>
+                                                                <div class="field">
+                                                                    <span class="sympol">$</span>
+                                                                    <input type="number" class="input-max" value="10000">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 text-end">
+                                                            <button class="bttn"> go </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Rating </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="check-group check-stars">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="rate1">
+                                                        <label class="form-check-label" for="rate1">
+                                                            <div class="rate ms-1">
+                                                                <div class="stars">
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                </div>
+                                                                <span class="num fsz-12 ms-2"> (52) </span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="rate2">
+                                                        <label class="form-check-label" for="rate2">
+                                                            <div class="rate ms-1">
+                                                                <div class="stars">
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                </div>
+                                                                <span class="num fsz-12 ms-2"> (24) </span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="rate3">
+                                                        <label class="form-check-label" for="rate3">
+                                                            <div class="rate ms-1">
+                                                                <div class="stars">
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                </div>
+                                                                <span class="num fsz-12 ms-2"> (5) </span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="rate4">
+                                                        <label class="form-check-label" for="rate4">
+                                                            <div class="rate ms-1">
+                                                                <div class="stars">
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                </div>
+                                                                <span class="num fsz-12 ms-2"> (1) </span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="rate5">
+                                                        <label class="form-check-label" for="rate5">
+                                                            <div class="rate ms-1">
+                                                                <div class="stars">
+                                                                    <i class="la la-star"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                    <i class="la la-star color-999"></i>
+                                                                </div>
+                                                                <span class="num fsz-12 ms-2"> (3) </span>
+                                                            </div>
+                                                        </label>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Screen Size </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="check-boxes">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                                                        <label class="form-check-label" for="check1">
+                                                            <span> 7” & Under </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check2">
+                                                        <label class="form-check-label" for="check2">
+                                                            <span> 7.1” - 8.9” </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check3">
+                                                        <label class="form-check-label" for="check3">
+                                                            <span> 9” - 10.9” </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="check4">
+                                                        <label class="form-check-label" for="check4">
+                                                            <span> 11” & Greater </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Color </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="color-boxes">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color1">
+                                                        <label class="form-check-label" for="color1">
+                                                            <span class="color-box card-red"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color2">
+                                                        <label class="form-check-label" for="color2">
+                                                            <span class="color-box card-blue"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color3">
+                                                        <label class="form-check-label" for="color3">
+                                                            <span class="color-box card-cyan"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color4">
+                                                        <label class="form-check-label" for="color4">
+                                                            <span class="color-box card-black"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color5">
+                                                        <label class="form-check-label" for="color5">
+                                                            <span class="color-box card-white"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color6">
+                                                        <label class="form-check-label" for="color6">
+                                                            <span class="color-box card-green"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color7">
+                                                        <label class="form-check-label" for="color7">
+                                                            <span class="color-box card-gray"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="color8">
+                                                        <label class="form-check-label" for="color8">
+                                                            <span class="color-box card-purple"><i class="la la-check"></i></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Memory </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory1">
+                                                                <label class="form-check-label fsz-13" for="memory1"> <p> 12GB <span class="color-888"> (4) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory2">
+                                                                <label class="form-check-label fsz-13" for="memory2"> <p> 8GB <span class="color-888"> (3) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory3">
+                                                                <label class="form-check-label fsz-13" for="memory3"> <p> 6GB <span class="color-888"> (12) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory4">
+                                                                <label class="form-check-label fsz-13" for="memory4"> <p> 4GB <span class="color-888"> (6) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory5">
+                                                                <label class="form-check-label fsz-13" for="memory5"> <p> 3GB <span class="color-888"> (7) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory6">
+                                                                <label class="form-check-label fsz-13" for="memory6"> <p> 1.5GB <span class="color-888"> (1) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory7">
+                                                                <label class="form-check-label fsz-13" for="memory7"> <p> 1GB <span class="color-888"> (1) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="check-group">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="memory8">
+                                                                <label class="form-check-label fsz-13" for="memory8"> <p> 512MB <span class="color-888"> (2) </span> </p> </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-group">
+                                            <div class="group-title">
+                                                <strong class="fsz-14"> By Conditions </strong>
+                                                <span class="arrow"> <i class="la la-angle-up"></i> </span>
+                                            </div>
+                                            <div class="group-body">
+                                                <div class="check-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="con1">
+                                                        <label class="form-check-label fsz-13" for="con1"> <p> New <span class="color-888"> (21) </span> </p> </label>
+                                                    </div>
+                                                </div>
+                                                <div class="check-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="con2">
+                                                        <label class="form-check-label fsz-13" for="con2"> <p> Like New <span class="color-888"> (2) </span> </p> </label>
+                                                    </div>
+                                                </div>
+                                                <div class="check-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="con3">
+                                                        <label class="form-check-label fsz-13" for="con3"> <p> Open Box <span class="color-888"> (38) </span> </p> </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="addimg mt-10">
+                                    <img src="{% static 'img/addimg.png' %}" alt="" class="img-cover">
+                                    <div class="inf">
+                                        <h6 class="fsz-24 mb-30 text-white"> <strong> OKODo </strong> hero 11+ <br> 5K wireless </h6>
+                                        <div class="price">
+                                            <p class="fsz-12 color-999 text-uppercase"> from </p>
+                                            <h5 class="fsz-30 fw-400"> $169 </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="best-seller mt-5 mt-lg-0">
+                                <h6 class="fsz-18 fw-bold text-uppercase mb-30"> Best seller in this category </h6>
+                                <div class="main-content">
+                                    <div class="best-slider6">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod9.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <div class="rating">
+                                                            <div class="stars">
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star color-999"></i>
+                                                            </div>
+                                                            <span class="num"> (152) </span>
+                                                        </div>
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> BOSO 2 Wireless On Ear Headphone </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 fw-600"> $359.00 </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                            <a href="products.html#" class="meta-item color-red1"> free gift <span class="bg bg-red1"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                        <div class="thumbnail-imgs mt-10">
+                                                            <span class="color-img icon-40">
+                                                                <img src="{% static 'img/products/prod9.png' %}" alt="" class="thumbnail selected">
+                                                            </span>
+                                                            <span class="color-img icon-40">
+                                                                <img src="{% static 'img/products/cl_1.jpg' %}" alt="" class="thumbnail">
+                                                            </span>
+                                                        </div>
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <div class="dis-card">
+                                                            <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                            <h6 class="fsz-14"> $199.00 </h6>
+                                                        </div>
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod10.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <div class="rating">
+                                                            <div class="stars">
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                            </div>
+                                                            <span class="num"> (152) </span>
+                                                        </div>
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> OPod Pro 12.9 Inch M1 2023, 64GB + Wifi, GPS </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 color-red1 fw-600"> $569.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $759.00 </span> </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <div class="dis-card">
+                                                            <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                            <h6 class="fsz-14"> $59.00 </h6>
+                                                        </div>
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod11.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <div class="rating">
+                                                            <div class="stars">
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star-half"></i>
+                                                            </div>
+                                                            <span class="num"> (8) </span>
+                                                        </div>
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> uLosk Mini case 2.0,  Xenon i10 / 32GB / SSD 512GB / VGA 8GB </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 color-red1 fw-600"> $1,729.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $2,119.00 </span> </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2"> <i class="fas fa-times-circle color-red1 me-1"></i> Out of stock </p>
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod12.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Opplo Watch Series 8 GPS + Cellular Stainless Steel Case with Milanese Loop </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 fw-600"> $979.00 - $1,259.00 </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-222"> $2.98 Shipping <span class="bg bg-222"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2 text-uppercase"> PRE - ORDER </p>                                                    
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <div class="dis-card">
+                                                            <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                            <h6 class="fsz-14"> $3.00 </h6>
+                                                        </div>
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod13.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <div class="rating">
+                                                            <div class="stars">
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                            </div>
+                                                            <span class="num"> (9) </span>
+                                                        </div>
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> iSmart 24V Charger </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 color-red1 fw-600"> $9.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $12.00 </span> </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-222"> $3.98 Shipping <span class="bg bg-222"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2"> <i class="fas fa-phone-alt me-1"></i> <a href="products.html#"> Contact </a> </p>
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <div class="dis-card">
+                                                            <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                            <h6 class="fsz-14"> $199.00 </h6>
+                                                        </div>
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod10.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <div class="rating">
+                                                            <div class="stars">
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                            </div>
+                                                            <span class="num"> (152) </span>
+                                                        </div>
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> OPod Pro 12.9 Inch M1 2023, 64GB + Wifi, GPS </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 color-red1 fw-600"> $569.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $759.00 </span> </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="product-card">
+                                                    <div class="top-inf">
+                                                        <div class="dis-card">
+                                                            <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                            <h6 class="fsz-14"> $59.00 </h6>
+                                                        </div>
+                                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                    </div>
+                                                    <a href="single_product.html" class="img">
+                                                        <img src="{% static 'img/products/prod11.png' %}" alt="" class="img-contain main-image">
+                                                    </a>
+                                                    <div class="info">
+                                                        <div class="rating">
+                                                            <div class="stars">
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star"></i>
+                                                                <i class="la la-star-half"></i>
+                                                            </div>
+                                                            <span class="num"> (8) </span>
+                                                        </div>
+                                                        <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> uLosk Mini case 2.0,  Xenon i10 / 32GB / SSD 512GB / VGA 8GB </a> </h6>
+                                                        <div class="price mt-15">
+                                                            <h5 class="fsz-18 color-red1 fw-600"> $1,729.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $2,119.00 </span> </h5>
+                                                        </div>
+                                                        <div class="meta">
+                                                            <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        </div>
+                                                        <p class="fsz-12 mt-2"> <i class="fas fa-times-circle color-red1 me-1"></i> Out of stock </p>
+                                                        <a href="products.html#0" class="butn bg-000 text-white radius-4 fw-500 fsz-12 text-uppercase text-center mt-2 hover-bg-green2 addCart"> <span> Add To Cart </span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="products-content">
+                                <div class="prod-filter color-666">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2">
+                                            <p class=""> <strong class="color-000"> 1 - 40 </strong> of 120 results </p>
+                                        </div>
+                                        <div class="col-lg-4 mt-3 mt-lg-0">
+                                            <div class="show-item">
+                                                <span class="s-title"> Show item </span>
+                                                <div class="show-numbs">
+                                                    <a href="products.html#" class="active"> 24 </a>
+                                                    <a href="products.html#"> 48 </a>
+                                                    <a href="products.html#"> 72 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mt-3 mt-lg-0">
+                                            <div class="sort-item">
+                                                <span class="s-title"> Show item </span>
+                                                <select name="" id="" class="form-control form-select">
+                                                    <option value="">Default</option>
+                                                    <option value="">best seller</option>
+                                                    <option value="">price</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end mt-3 mt-lg-0">
+                                            <div class="view-item">
+                                                <span class="s-title"> View As </span>
+                                                <span class="v-item grid-btn active"> <i class="la la-th-large"></i> </span>
+                                                <span class="v-item list-btn"> <i class="la la-list-ul"></i> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <div class="dis-card">
+                                                        <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                        <h6 class="fsz-14"> $199.00 </h6>
+                                                    </div>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod26.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                        </div>
+                                                        <span class="num"> (152) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> SROK Smart Phone 128GB, Oled Retina </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 color-red1 fw-600"> $579.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $859.00 </span> </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod27.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> aPod Pro Tablet 2023  LTE + Wifi, GPS Cellular 12.9 Inch, 512GB </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $979.00 - $1,259.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-222"> $2.98 Shipping <span class="bg bg-222"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod65.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star color-999"></i>
+                                                        </div>
+                                                        <span class="num"> (5) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Samsung Galaxy X6 Ultra LTE 4G/128 Gb, Black  Smartphone  </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $659.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        <a href="products.html#" class="meta-item color-red1"> free gift <span class="bg bg-red1"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                    <div class="thumbnail-imgs mt-10">
+                                                        <span class="color-img icon-40">
+                                                            <img src="{% static 'img/products/prod65.png' %}" alt="" class="thumbnail selected">
+                                                        </span>
+                                                        <span class="color-img icon-40">
+                                                            <img src="{% static 'img/products/prod24.png' %}" alt="" class="thumbnail">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <div class="dis-card">
+                                                        <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                        <h6 class="fsz-14"> $59.00 </h6>
+                                                    </div>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod29.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                        </div>
+                                                        <span class="num"> (9) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Xiamoi Redmi Note 5, 64GB </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 color-red1 fw-600"> $1,239.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $1,619.00 </span> </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-phone-alt me-1"></i> <a href="products.html#"> Contact </a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod30.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star-half"></i>
+                                                        </div>
+                                                        <span class="num"> (8) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Microsute Alpha Ultra S5 Surface 128GB 2022, Sliver </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $1,729.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-phone-alt me-1"></i> <a href="products.html#"> Contact </a> </p>
+                                                    <div class="thumbnail-imgs mt-10">
+                                                        <span class="color-img icon-40">
+                                                            <img src="{% static 'img/products/prod30.png' %}" alt="" class="thumbnail">
+                                                        </span>
+                                                        <span class="color-img icon-40">
+                                                            <img src="{% static 'img/products/prod10.png' %}" alt="" class="thumbnail">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <div class="dis-card">
+                                                        <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                        <h6 class="fsz-14"> $199.00 </h6>
+                                                    </div>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod10.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star color-999"></i>
+                                                            <i class="la la-star color-999"></i>
+                                                        </div>
+                                                        <span class="num"> (152) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> OPod Pro 12.9 Inch M1 2023, 64GB + Wifi, GPS </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 color-red1 fw-600"> $569.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $759.00 </span> </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod5.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                        </div>
+                                                        <span class="num"> (2) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Xioma Redmi Note 11 Pro 256GB 2023, Black Smartphone </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $59.00 - $129.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod66.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular  </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $279.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-222"> $2.98 Shipping <span class="bg bg-222"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod67.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Lenovo Redmi Note 5, 64GB </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $69.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod68.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> LG Pro Tablet 2023 LTE + Wifi, GPS Cellular </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $179.00 - $429.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-222"> $2.98 Shipping <span class="bg bg-222"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> PRE-ORDER </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> out of stock </small>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod69.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star color-999"></i>
+                                                        </div>
+                                                        <span class="num"> (5) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Samsung Galaxy X6 Ultra LTE 4G/128 Gb, Black  Smartphone  </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $659.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        <a href="products.html#" class="meta-item color-red1"> free gift <span class="bg bg-red1"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <div class="dis-card">
+                                                        <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                        <h6 class="fsz-14"> $199.00 </h6>
+                                                    </div>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod26.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                        </div>
+                                                        <span class="num"> (152) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> SROK Smart Phone 128GB, Oled Retina </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 color-red1 fw-600"> $579.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $859.00 </span> </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <div class="dis-card">
+                                                        <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                        <h6 class="fsz-14"> $199.00 </h6>
+                                                    </div>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod70.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                        </div>
+                                                        <span class="num"> (152) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> SROK Smart Phone 128GB, Oled Retina </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 color-red1 fw-600"> $579.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $859.00 </span> </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod27.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> aPod Pro Tablet 2023  LTE + Wifi, GPS Cellular 12.9 Inch, 512GB </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $979.00 - $1,259.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-222"> $2.98 Shipping <span class="bg bg-222"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod65.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star color-999"></i>
+                                                        </div>
+                                                        <span class="num"> (5) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Samsung Galaxy X6 Ultra LTE 4G/128 Gb, Black  Smartphone  </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 fw-600"> $659.00 </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                        <a href="products.html#" class="meta-item color-red1"> free gift <span class="bg bg-red1"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-check-circle color-green2 me-1"></i> In stock </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="product-card">
+                                                <div class="top-inf">
+                                                    <div class="dis-card">
+                                                        <small class="fsz-10 d-block text-uppercase"> save </small>
+                                                        <h6 class="fsz-14"> $59.00 </h6>
+                                                    </div>
+                                                    <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                                </div>
+                                                <a href="single_product.html" class="img">
+                                                    <img src="{% static 'img/products/prod29.png' %}" alt="" class="img-contain main-image">
+                                                </a>
+                                                <div class="info">
+                                                    <div class="rating">
+                                                        <div class="stars">
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                            <i class="la la-star"></i>
+                                                        </div>
+                                                        <span class="num"> (9) </span>
+                                                    </div>
+                                                    <h6> <a href="single_product.html" class="prod-title fsz-14 fw-bold mt-2 hover-green2"> Xiamoi Redmi Note 5, 64GB </a> </h6>
+                                                    <div class="price mt-15">
+                                                        <h5 class="fsz-18 color-red1 fw-600"> $1,239.00 <span class="old fsz-14 color-666 text-decoration-line-through"> $1,619.00 </span> </h5>
+                                                    </div>
+                                                    <div class="meta">
+                                                        <a href="products.html#" class="meta-item color-green2"> free shipping <span class="bg bg-green2"></span> </a>
+                                                    </div>
+                                                    <p class="fsz-12 mt-2"> <i class="fas fa-phone-alt me-1"></i> <a href="products.html#"> Contact </a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item"><a class="page-link active" href="products.html#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="products.html#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="products.html#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="products.html#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="products.html#">...</a></li>
+                                      <li class="page-item"><a class="page-link" href="products.html#">20</a></li>
+                                      <li class="page-item"><a class="page-link" href="products.html#">Next <i class="la la-angle-right ms-1"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  End products  -->
+
+
+                <!--  Start recently  -->
+                <section class="tc-recently-viewed-style6 p-30 radius-4 bg-white mt-3 wow fadeInUp mb-3">
+                    <div class="title mb-30">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h6 class="fsz-18 fw-bold text-uppercase d-inline-block"> your recently viewed </h6>
+                                <a href="products.html#" class="more text-capitalize color-666 fsz-13 ms-lg-4 mt-4 mt-lg-0"> View All <i class="la la-angle-right ms-1"></i> </a>
+                            </div>
+                            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                                <div class="arrows">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="top-inf">
+                                        <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                    </div>
+                                    <div class="row gx-0">
+                                        <div class="col-5">
+                                            <a href="products.html#" class="img">
+                                                <img src="{% static 'img/products/prod58.png' %}" alt="" class="img-contain">
+                                            </a>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="info">
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star color-999"></i>
+                                                    </div>
+                                                    <span class="num"> (152) </span>
+                                                </div>
+                                                <a href="products.html#" class="title fsz-13 fw-bold mb-15 hover-green2 pe-3"> Xomie Remid 8 Sport Water Resitance Watch </a>
+                                                <h6 class="fsz-16 fw-bold"> $579.00 </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="top-inf">
+                                        <small class="fsz-10 py-1 px-2 radius-2 bg-222 text-white text-uppercase"> new </small>
+                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                    </div>
+                                    <div class="row gx-0">
+                                        <div class="col-5">
+                                            <a href="products.html#" class="img">
+                                                <img src="{% static 'img/products/prod59.png' %}" alt="" class="img-contain">
+                                            </a>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="info">
+                                                <a href="products.html#" class="title fsz-13 fw-bold mb-15 hover-green2 pe-3"> Microte Surface 2.0 Laptop </a>
+                                                <h6 class="fsz-16 fw-bold"> $979.00 </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="top-inf">
+                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                    </div>
+                                    <div class="row gx-0">
+                                        <div class="col-5">
+                                            <a href="products.html#" class="img">
+                                                <img src="{% static 'img/products/prod60.png' %}" alt="" class="img-contain">
+                                            </a>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="info">
+                                                <a href="products.html#" class="title fsz-13 fw-bold mb-15 hover-green2 pe-3"> aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular 12.9 Inch, 512GB </a>
+                                                <h6 class="fsz-16 fw-bold"> $979.00 - $1,259.00 </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="top-inf">
+                                        <div class="dis-card">
+                                            <small class="fsz-10 d-block text-uppercase"> save </small>
+                                            <h6 class="fsz-10"> $192.00 </h6>
+                                        </div>
+                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                    </div>
+                                    <div class="row gx-0">
+                                        <div class="col-5">
+                                            <a href="products.html#" class="img">
+                                                <img src="{% static 'img/products/prod61.png' %}" alt="" class="img-contain">
+                                            </a>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="info">
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star"></i>
+                                                        <i class="la la-star color-999"></i>
+                                                    </div>
+                                                    <span class="num"> (152) </span>
+                                                </div>
+                                                <a href="products.html#" class="title fsz-13 fw-bold mb-15 hover-green2 pe-3"> SROK Smart Phone 128GB, Oled Retina </a>
+                                                <h6 class="fsz-16 fw-bold"> <span class="color-red1 fw-600"> $579.00  </span> <span class="old fsz-14 color-666 text-decoration-line-through ms-2"> $779.00 </span> </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="top-inf">
+                                        <a href="products.html#0" class="fav-btn"> <i class="las la-heart"></i> </a>
+                                    </div>
+                                    <div class="row gx-0">
+                                        <div class="col-5">
+                                            <a href="products.html#" class="img">
+                                                <img src="{% static 'img/products/prod60.png' %}" alt="" class="img-contain">
+                                            </a>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="info">
+                                                <a href="products.html#" class="title fsz-13 fw-bold mb-15 hover-green2 pe-3"> aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular 12.9 Inch, 512GB </a>
+                                                <h6 class="fsz-16 fw-bold"> $979.00 - $1,259.00 </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  End recently  -->
+
+
+            </main>
+            <!--End-Contents-->
+
+{% endblock content %}
