@@ -39,7 +39,7 @@ class Banner(models.Model):
                               help_text='1920*1280 px')
     heading = models.CharField(max_length=255, null=True, blank=True)
     sub_heading = models.TextField(null=True, blank=True)
-    link = models.CharField(max_length=255, null=True, blank=True)
+    link = models.URLField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

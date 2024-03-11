@@ -1,0 +1,504 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="HTML5 Template swoo Multi-Purpose themeforest">
+    <meta name="description" content="swoo - Multi-Purpose HTML5 Template">
+    <meta name="author" content="">
+
+    <!-- Title  -->
+    <title>Swoo</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/fav.png" title="Favicon" sizes="16x16">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="{% static 'css/lib/bootstrap.min.css' %}">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- fontawesome icons  -->
+    <link rel="stylesheet" href="{% static 'css/lib/all.min.css' %}">
+    <!-- fontawesome icons  -->
+    <link rel="stylesheet" href="{% static 'css/lib/line-awesome.css' %}">
+    <!-- animate css  -->
+    <link rel="stylesheet" href="{% static 'css/lib/animate.css' %}">
+    <!-- fancybox popup  -->
+    <link rel="stylesheet" href="{% static 'css/lib/jquery.fancybox.css' %}">
+    <!-- lity popup  -->
+    <link rel="stylesheet" href="{% static 'css/lib/lity.css' %}">
+    <!-- swiper slider  -->
+    <link rel="stylesheet" href="{% static 'css/lib/swiper8.min.css' %}">
+    <!-- izi toast  -->
+    <link rel="stylesheet" href="{% static 'css/lib/iziToast.min.css' %}">
+
+    <!-- common style -->
+    <link rel="stylesheet" href="{% static 'css/common_style.css' %}">
+
+    <!-- home style -->
+    <link rel="stylesheet" href="{% static 'css/home_4_style.css' %}">
+</head>
+
+<body class="home-style4">
+
+    <!--  Start loader  -->
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+    <!--  End loader  -->
+
+    <!--  Start top navbar  -->
+    <div class="tc-top-navbar-style4 d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center gx-0">
+                <div class="col-lg-3">
+                    <div class="inf">
+                        <h3 class="fsz-30 text-capitalize"> Convertible Cribs </h3>
+                        <p class="fsz-13 color-333"> Otto 3-in-1 Full-Size  </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="code-card">
+                        <div class="perc">
+                            <h2 class="fsz-40 color-red2"> 10% </h2>
+                            <p class="fsz-18 fw-400 lh-2 ms-2 text-uppercase"> sale <br> off </p>
+                        </div>
+                        <div class="cont ps-3">
+                            <small class="fsz-12 color-666 d-block"> Enter promotion code </small>
+                            <p class="fsz-18 fw-bold text-uppercase lh-3"> SWAT10OFF </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="img">
+                        <img src="{% static 'img/top_nav1.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 text-lg-end">
+                    <a href="index.html#" class="butn md-butn bg-cyan2 text-white radius-3 fw-600 fsz-12 text-uppercase"> <span> Shop Now </span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End top navbar  -->
+
+    <!--  Start navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark tc-navbar-style4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#">
+                <img src="{% static 'img/logo.png' %}" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="search-cat d-none d-lg-block">
+                <div class="input-group">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search anything...">
+                        <a href="index.html#" class="search-btn"> <i class="fal fa-search"></i> </a>
+                    </div>
+                    <select name="name" class="form-select">
+                        <option value=""> All Categories </option>
+                        <option value=""> Categories 1 </option>
+                        <option value=""> Categories 2 </option>
+                    </select>
+                </div>
+            </div>
+            <div class="side-nav d-none d-lg-flex">
+                <div class="icons">
+                    <a href="index.html#" class="icon-link"> <i class="las la-sync-alt"></i> </a>
+                    <a href="index.html#" class="icon-link"> <i class="lar la-heart"></i> </a>
+                    <a href="index.html#" class="icon-link"> <i class="las la-user"></i> </a>
+                </div>
+                <div class="text-item ms-3">
+                    <small class="fsz-11 text-uppercase d-block"> welcome </small>
+                    <a href="../inner_pages/login.html" class="fsz-14 text-uppercase fw-bold"> log in / Register </a>
+                </div>
+                <div class="icons ms-4">
+                    <a href="index.html#" class="icon-link"> <i class="las la-shopping-bag"></i> <span class="num">5</span> </a>
+                </div>
+                <div class="text-item ms-3">
+                    <small class="fsz-11 text-uppercase d-block"> cart </small>
+                    <a href="index.html#" class="fsz-14 text-uppercase fw-bold"> $1,689.00 </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar navbar-expand-lg navbar-dark tc-navbar-style4 nav-links py-0">
+        <div class="container">
+            <div class="cat-list order-last order-lg-first">
+                <a href="index.html#" class="list-btn"> <i class="fal fa-bars me-2"></i> <span> List Category </span> <i class="fal fa-chevron-down ms-5 arrow"></i> </a>
+                <ul class="list-card active">
+                    <li> <a href="../inner_pages/products.html" class="color-red2 fw-500 text-uppercase"> SALE  40% OFF </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Pregnant & Postpartum <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a>  </li>
+                    <li> <a href="../inner_pages/products.html"> Milks & Foods <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Diapers & Wipes <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Infant <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Eat & Drink Supplies <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Baby Fashion <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Baby Out <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Toys & Study <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Stroller, Crib, Chair <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Washes & Bath <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Homewares <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                    <li> <a href="../inner_pages/products.html"> Clearance <span class="arrow"> <i class="fal fa-chevron-right ms-4"></i> </span> </a> </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="search-cat d-block d-lg-none my-4">
+                    <div class="input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search anything...">
+                            <a href="index.html#" class="search-btn"> <i class="fal fa-search"></i> </a>
+                        </div>
+                        <select name="name" class="form-select">
+                            <option value=""> All Categories </option>
+                            <option value=""> Categories 1 </option>
+                            <option value=""> Categories 2 </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="links ms-0 me-auto">
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="index.html#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Homes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="index.html">Home Baby</a></li>
+                                <li><a class="dropdown-item" href="../home_electronic/index.html">Home Electronic</a></li>
+                                <li><a class="dropdown-item" href="../home_lighting/index.html">Home Lighting</a></li>
+                                <li><a class="dropdown-item" href="../home_pets/index.html">Home Pets</a></li>
+                                <li><a class="dropdown-item" href="../home_tech/index.html">Home Tech</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="index.html#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="../inner_pages/about.html">About</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/register.html">Register</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="index.html#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" href="../inner_pages/products.html">products</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/products_layout_2.html">products layout 2</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/checkout.html">Checkout</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/single_product.html">Single Product</a></li>
+                                <li><a class="dropdown-item" href="../inner_pages/single_product_pay.html">Single Product Pay</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hotline-side">
+                    <div class="hotline border border-light1 py-2 px-3 rounded-pill">
+                        <span class="icon me-1"> <i class="las la-tty"></i> </span>
+                        <small class="fsz-12 me-1"> Hotline 24/7 </small>
+                        <a href="tel:002538862516" class="fsz-13 fw-bold"> (025) 3886 25 16 </a>
+                    </div>
+                </div>
+                <div class="links lang-links">
+                    <ul class="links-ul">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="index.html#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="la la-dollar-sign me-1"></i> USD
+                            </a>
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="index.html#">USD</a></li>
+                              <li><a class="dropdown-item" href="index.html#">USD</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="index.html#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="{% static 'img/eng.png' %}" alt="" class="me-2 icon-15"> Eng
+                            </a>
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="index.html#">Arabic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End navbar  -->
+{% block content %}
+
+{% endblock content %}
+
+  <!--  Start footer  -->
+    <footer class="tc-footer-style4">
+
+        <div class="foot-features py-4 lh-7 bg-cyan2 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="ft-item">
+                            <span class="icon me-3"> <i class="lab la-telegram-plane fs-5"></i> </span>
+                            <span class="fsz-16 fw-500"> Free Shipping over $99 </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ft-item">
+                            <span class="icon me-3"> <i class="la la-redo-alt fs-5"></i> </span>
+                            <span class="fsz-16 fw-500"> 30 Days money back </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ft-item">
+                            <span class="icon me-3"> <i class="la la-check-circle fs-5"></i> </span>
+                            <span class="fsz-16 fw-500"> 100% Authentic Products </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ft-item">
+                            <span class="icon me-3"> <i class="la la-credit-card fs-5"></i> </span>
+                            <span class="fsz-16 fw-500"> Flexiable payment options </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-content pt-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="links-group mb-50">
+                            <h6 class="sub-title fsz-18 fw-bold mb-20"> Top Categories </h6>
+                            <ul>
+                                <li> <a href="index.html#"> Pregnant & Postpartum </a> </li>
+                                <li> <a href="index.html#"> Milks & Foods </a> </li>
+                                <li> <a href="index.html#"> Diapers & Wipes </a> </li>
+                                <li> <a href="index.html#"> Infant </a> </li>
+                                <li> <a href="index.html#"> Eat & Drink Supplies </a> </li>
+                                <li> <a href="index.html#"> Baby Fashion </a> </li>
+                                <li> <a href="index.html#"> Baby Out </a> </li>
+                                <li> <a href="index.html#"> Toys & Study </a> </li>
+                                <li> <a href="index.html#"> Stroller, Crib, Chair </a> </li>
+                                <li> <a href="index.html#"> Washes & Bath </a> </li>
+                                <li> <a href="index.html#"> Homewares </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="links-group mb-50">
+                            <h6 class="sub-title fsz-18 fw-bold mb-20"> Company </h6>
+                            <ul>
+                                <li> <a href="index.html#"> About Swatbabymall </a> </li>
+                                <li> <a href="index.html#"> Contact </a> </li>
+                                <li> <a href="index.html#"> Career </a> </li>
+                                <li> <a href="index.html#"> Blog </a> </li>
+                                <li> <a href="index.html#"> Sitemap </a> </li>
+                                <li> <a href="index.html#"> Store Locations </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="links-group mb-50">
+                            <h6 class="sub-title fsz-18 fw-bold mb-20"> Help Center </h6>
+                            <ul>
+                                <li> <a href="index.html#"> Customer Service </a> </li>
+                                <li> <a href="index.html#"> Policy </a> </li>
+                                <li> <a href="index.html#"> Terms & Conditions </a> </li>
+                                <li> <a href="index.html#"> Trach Order </a> </li>
+                                <li> <a href="index.html#"> FAQs </a> </li>
+                                <li> <a href="index.html#"> My Account </a> </li>
+                                <li> <a href="index.html#"> Product Support </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="links-group mb-50">
+                            <h6 class="sub-title fsz-18 fw-bold mb-20"> Partner </h6>
+                            <ul>
+                                <li> <a href="index.html#"> Become Seller </a> </li>
+                                <li> <a href="index.html#"> Affiliate </a> </li>
+                                <li> <a href="index.html#"> Advertise </a> </li>
+                                <li> <a href="index.html#"> Partnership </a> </li>
+                                <li> <a href="index.html#"> Care Services </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="subscribe-content ps-lg-5 mb-50">
+                            <h6 class="sub-title fsz-18 fw-bold mb-20"> Subscribe & Get <span class="color-red2"> 10% </span> OFF </h6>
+                            <div class="subs-form pt-2">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email Address">
+                                    <button> subscribe </button>
+                                </div>
+                                <p class="fsz-13 mt-3 color-666"> By subscribing, you accept the <a href="index.html#" class="color-000 text-decoration-underline"> Privacy Policy </a> </p>
+                                <ul class="info-list mt-30 lh-6">
+                                    <li> <span> Hotline 24/7: </span> <a href="tel:0032536862516" class="fw-bold color-cyan2"> (+325) 3686 25 16 </a> </li>
+                                    <li> <span> Work Hours: </span> <span class="color-666"> Monday-Saturday: 9.00am - 5.00pm </span> </li>
+                                    <li> <span> Mail: </span> <a href="mailto:contact@swatbabymall.com" class="color-666 hover-cyan2"> contact@swatbabymall.com </a> </li>
+                                </ul>
+                                <div class="social-links mt-30">
+                                    <a href="index.html#"> <i class="fab fa-twitter"></i> </a>
+                                    <a href="index.html#"> <i class="fab fa-facebook-f"></i> </a>
+                                    <a href="index.html#"> <i class="fab fa-instagram"></i> </a>
+                                    <a href="index.html#"> <i class="fab fa-youtube"></i> </a>
+                                    <a href="index.html#"> <i class="fab fa-pinterest-p"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btm-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-lg-start text-center">
+                        <div class="links lang-links">
+                            <ul class="links-ul">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="index.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="la la-dollar-sign me-1"></i> USD
+                                    </a>
+                                    <ul class="dropdown-menu" >
+                                      <li><a class="dropdown-item" href="index.html#">USD</a></li>
+                                      <li><a class="dropdown-item" href="index.html#">USD</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="index.html#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="{% static 'assets/img/eng.png' %}" alt="" class="me-2 icon-15"> Eng
+                                    </a>
+                                    <ul class="dropdown-menu" >
+                                      <li><a class="dropdown-item" href="index.html#">Arabic</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pay-imgs text-center py-4 py-lg-0">
+                            <img src="{% static 'img/pay/pay_1.png' %}" alt="">
+                            <img src="{% static 'img/pay/pay_2.png' %}" alt="">
+                            <img src="{% static 'img/pay/pay_3.png' %}" alt="">
+                            <img src="{% static 'img/pay/pay_4.png' %}" alt="">
+                            <img src="{% static 'img/pay/pay_5.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 justify-content-lg-end text-center">
+                        <div class="foot-download">
+                            <span> Download App </span>
+                            <a href="index.html#"> <i class="fab fa-apple me-1"></i> App Store </a>
+                            <a href="index.html#"> <i class="fab fa-google-play me-1"></i> Google Play </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot border-top border-1 mt-40 pt-30 pb-30">
+                    <div class="text-center">
+                        <p class="color-666"> © 2024 <a href="index.html#" class="fw-bold color-000"> Swoo </a> All Rights Reserved </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mob-navigation d-flex d-lg-none">
+            <ul>
+                <li class="list">
+                    <a href="index.html#0">
+                        <span class="icon"> <i class="las la-sync-alt"></i> </span>
+                        <span class="text">Compare</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="index.html#0">
+                        <span class="icon"> <i class="lar la-heart"></i> </span>
+                        <span class="text">Favorite</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="index.html#0">
+                        <span class="icon"> <i class="las la-home"></i> </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="index.html#0">
+                        <span class="icon"> <i class="las la-shopping-bag"></i> </span>
+                        <span class="text">Cart</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="index.html#0">
+                        <span class="icon"> <i class="las la-user"></i> </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="indicator"></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!--  End footer  -->
+
+    <!--  Start to top button  -->
+    <!-- <a href="#" class="to_top">
+        <i class="la la-angle-up"></i>
+    </a> -->
+    <!--  End to top button  -->
+
+    <!--  request  -->
+    <script src="{% static 'js/lib/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'js/lib/jquery-migrate-3.0.0.min.js' %}"></script>
+    <script src="{% static 'js/lib/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/lib/wow.min.js' %}"></script>
+    <script src="{% static 'js/lib/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/lib/lity.js' %}"></script>
+    <script src="{% static 'js/lib/swiper8-bundle.min.js' %}"></script>
+    <script src="{% static 'js/lib/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/lib/jquery.counterup.js' %}"></script>
+    <script src="{% static 'js/lib/parallaxie.js' %}"></script>
+    <script src="{% static 'js/lib/iziToast.min.js' %}"></script>
+    <!-- ===== gsap scripts ===== -->
+    <script src="{% static 'js/gsap_lib/gsap.min.js' %}"></script>
+    <!-- <script src="{% static 'js/gsap_lib/ScrollSmoother.min.js' %}"></script>
+    <script src="{% static 'js/gsap_lib/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'js/gsap_lib/SplitText.min.js' %}"></script> -->
+    <script src="{% static 'js/common_js.js' %}"></script>
+
+    <!-- ===== home scripts ===== -->
+    <script src="{% static 'js/home_4_scripts.js' %}"></script>
+
+</body>
+
+</html>
